@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>www.SYSTEM4STUDENTS.ro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/stylemanagement.css" />
+				<!-- BOOTSTRAP : -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	</head>
+	<body class="dashboard">
+		
+		<!--Nav -->
+		    <div class="topnav">
+				<a href="index.html">Home</a>
+				<a class="active" href="dashboard.html">Dashboard</a>
+				<a href="login.php">Log in</a>
+				<a href="event-calendar/index.html">Activities</a>
+				<a href="javascript-finished/index.html">To Do List</a>
+			</div>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html"></a></div>
+			</header>
+
+			<div class="scriptimages" style="text-align:center">
+			  <img class="mySlides" src="images/FILS4.png" style="width:100%">
+			  <img class="mySlides" src="images/FILS2.jpg" style="width:100%">
+			  <img class="mySlides" src="images/FILS3.jpg" style="width:100%">
+			  <img class="mySlides" src="images/FILS1.jpg" style="width:100%">
+			  
+				
+			  <button class="button-fils" onclick="plusDivs(-1)"style="color:#8C0000">Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			  <button class="button-fils" onclick="plusDivs(1)"style="color:#8C0000">Next</button>
+			</div>
+
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+				
+			</script>	
+
+
+
+	
+
+
+
+		<body class="w3-theme-l5">
+
+		<!-- Navbar -->
+		<div class="w3-top" style="color: #0080ff;left: 1100px;">
+		 <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+		  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+		  
+		  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+		  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+		  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+		  <div class="w3-dropdown-hover w3-hide-small">
+		    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+		    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px" >
+		      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+		      <a href="#" class="w3-bar-item w3-button">One new assignment posted</a>
+		      <a href="#" class="w3-bar-item w3-button">One assignment is overdue</a>
+		    </div>
+		  </div>
+		 </div>
+		</div>
+
+		<!-- Navbar on small screens -->
+		<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+		  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+		  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+		  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+		  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+		</div>
+
+		<!-- Page Container -->
+		<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+		  <!-- The Grid -->
+		  <div class="w3-row">
+		    <!-- Left Column -->
+		    <div class="w3-col m3">
+		      
+		      </div>
+		      <br>
+		      
+		      <!-- Accordion -->
+		      <div class="w3-card w3-round">
+		        <div class="w3-white">
+		          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+		          <div id="Demo1" class="w3-hide w3-container">
+		            <p>Some text..</p>
+		          </div>
+		          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+		          <div id="Demo2" class="w3-hide w3-container">
+		            <p>Some text..</p>
+		          </div>
+		          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Other Courses</button>
+		          <div id="Demo3" class="w3-hide w3-container">
+		            <p>Some text..</p>
+		       
+
+
+
+		       </div>
+		       <br>
+		      
+		      <!-- Interests --> 
+		      <div class="w3-card w3-round w3-white w3-hide-small">
+		        <div class="w3-container">
+		          <p>Interests</p>
+		          <p>
+		            <span class="w3-tag w3-small w3-theme-d5">News</span>
+		            <span class="w3-tag w3-small w3-theme-d4">About School</span>
+		            <span class="w3-tag w3-small w3-theme-d3">Homework</span>
+		            <span class="w3-tag w3-small w3-theme-d2">Projects</span>
+		            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+		            <span class="w3-tag w3-small w3-theme">Due Dates</span>
+		            <span class="w3-tag w3-small w3-theme-l1">Calendar</span>
+		          </p>
+		        </div>
+		      </div>
+		      <br>
+		      
+		      
+		<br>
+
+	
+		 
+		<script>
+		// Accordion
+		function myFunction(id) {
+		  var x = document.getElementById(id);
+		  if (x.className.indexOf("w3-show") == -1) {
+		    x.className += " w3-show";
+		    x.previousElementSibling.className += " w3-theme-d1";
+		  } else { 
+		    x.className = x.className.replace("w3-show", "");
+		    x.previousElementSibling.className = 
+		    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+		  }
+		}
+
+		// Used to toggle the menu on smaller screens when clicking on the menu button
+		function openNav() {
+		  var x = document.getElementById("navDemo");
+		  if (x.className.indexOf("w3-show") == -1) {
+		    x.className += " w3-show";
+		  } else { 
+		    x.className = x.className.replace(" w3-show", "");
+		  }
+		}
+		</script>
+
+		</body>
+
+
+
+			
+			
+
+				<!-- CONTACT TAB -->
+
+
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<body>
+
+			<form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+			<h2 class="w3-center">Contact Us</h2>
+			 
+			<div class="w3-row w3-section">
+			  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+			    <div class="w3-rest">
+			      <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+			    </div>
+			</div>
+
+			<div class="w3-row w3-section">
+			  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+			    <div class="w3-rest">
+			      <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+			    </div>
+			</div>
+
+			<div class="w3-row w3-section">
+			  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+			    <div class="w3-rest">
+			      <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+			    </div>
+			</div>
+
+			<div class="w3-row w3-section">
+			  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+			    <div class="w3-rest">
+			      <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+			    </div>
+			</div>
+
+			<div class="w3-row w3-section">
+			  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+			    <div class="w3-rest">
+			      <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+			    </div>
+			</div>
+
+			<p class="w3-center">
+				<div class="col-sm-3">
+							<div class="box">
+								<div class="content">
+									<header class="align-center">
+									</header>
+									<footer class="align-center">
+										<a href="Management.html" class="button">Send</a>
+									</footer>
+								</div>
+							</div>
+
+			</p>
+			</form>
+			
+
+	</body>
+</html>

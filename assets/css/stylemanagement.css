@@ -1,0 +1,172 @@
+.html body background{
+	top:100px;
+}
+.html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.logoimage a{
+	padding: -10px;
+	position: absolute;
+	top: 0px;
+	left:-50px;
+	margin-right: 20px;
+	border: 60px solid transparent;
+	background:  #eeebe2;
+	border-right-width:auto;
+	border-left-width:auto;
+	width: 1500px ;
+	overflow:auto;
+	font-size: 55px;
+	text-decoration:none;
+	color: #8C0000;
+	
+}
+
+.scriptimages{
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	width: 40%;
+  }
+
+.scriptimages .myslides{
+    float: left;
+    width:  50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+
+.scriptimages .button-management{
+	background-color: #5492e3; /* Blue */
+	border-radius: 12px;
+	color: white;
+    padding: 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.scriptimages .button-fils{
+	background-color: #5492e3; /* Blue */
+	border-radius: 12px;
+	color: white;
+    padding: 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.scriptimages .button-etti{
+	background-color: #5492e3; /* Blue */
+	border-radius: 12px;
+	color: white;
+    padding: 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+.scriptimages .button-chemistry{
+	background-color: #5492e3; /* Blue */
+	border-radius: 12px;
+	color: white;
+    padding: 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.links nav{
+	margin-left: 30px;
+    color: #8C0000;
+    text-decoration: none;
+    font-weight: bold;
+	padding: -10px;
+	position: absolute;
+	top: 115px;
+	right:80px;
+	font-size:30px;
+	border: 5px;
+	margin-right: 5px;
+}
+.links a:hover{
+	color: #8C0000;
+	background: #eeebe2;
+	border: 35px solid transparent;
+	font-size:30px;
+}
+.links a{
+	color: black;
+	text-decoration: none;
+	right: 290px;
+	
+}
+
+
+.scriptimages1 {
+	top: 6000px;
+	position:absolute;
+	height:20px;
+	left:10px;
+}
+.scriptimages1 img{
+	height: -50px;
+	
+}
+
+
+img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  border: 3px; 
+}
+
+
+
+
+
+
+h1{
+	position:absolute;
+	top: 200px;
+	left:10px;
+	color:#8C0000;
+}
+h3{
+ position: absolute;
+top:800px;	
+left:10px;	
+color:black;
+}
+
+
+
+
